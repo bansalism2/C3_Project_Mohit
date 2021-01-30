@@ -65,14 +65,14 @@ public class Restaurant {
         return name;
     }
 
-//    public int getOrderTotal(List<String> items) {
-//        int order_total = 0;
-//        for(int i=0; i<items.size();i++){
-//            String itm = items.get(i);
-//            Item it = findItemByName(itm);
-//            order_total+=it.getPrice();
-//        }
-//        return order_total;
-//    }
+    public int getOrderTotal(List<String> items) {
+        int order_total = 0;
+        for(int i=0; i<items.size();i++){
+            String itm = items.get(i);
+            Item it = findItemByName(itm);
+            order_total+=it.getPrice();
+        }
+        return order_total;
+    }
 
 }
